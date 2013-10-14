@@ -95,7 +95,7 @@ if (count($objects))
                     $cli->output("parentNodeID: ". $parentNodeID);
                     if ($isDebug !== true )
                     {
-                        $version->assignToNode( $parentNodeID, $isMain = true);
+                        $version->assignToNode( $parentNodeID, $assignment->attribute('is_main'));
                         $assignment->purge();
                     }
                 }   
